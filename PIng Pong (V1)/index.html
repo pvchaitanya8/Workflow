@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pong Game</title>
+</head>
+<body>
+    <h1>Ping - Pong</h1>
+    <br>
+    <div class="game-container">
+        <div class="paddle" id="left-paddle"></div>
+        <div class="paddle" id="right-paddle"></div>
+        <div class="ball" id="ball"></div>
+    </div>
+    <div id="game-over" class="hidden">
+        <p></p>
+        <h4>Player 1 Score: <span id="left-player-score">0</span></h4>
+        <h4>Player 2 Score: <span id="right-player-score">0</span></h4>
+    </div>
+    <button id="start-button">Start Game</button>
+    <script src="script.js"></script>
+</body>
+</html>

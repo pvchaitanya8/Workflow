@@ -1,0 +1,108 @@
+/* Add some general styles */
+body {
+    background-color: #919191;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Style the game container */
+.game-container {
+    width: 800px;
+    height: 400px;
+    background-color: #333;
+    position: relative;
+    overflow: hidden;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style the paddles */
+.paddle {
+    width: 20px;
+    height: 100px;
+    background-color: #fff;
+    position: absolute;
+    transition: transform 0.2s ease-in-out;
+}
+
+#left-paddle {
+    left: 10px;
+}
+
+#right-paddle {
+    right: 10px;
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    background-color: #ff0000;
+    position: absolute;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+    will-change: transform; /* Apply hardware acceleration */
+}
+
+/* Style the game over screen */
+#game-over {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Style buttons */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #42cb4e;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #333;
+    color: #ffffff;
+}
+
+h4 {
+    font-size: 16px; 
+    color: #000000;
+}
+h1 {
+    font-size: 48px; 
+    color: #000000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+.waviy {
+    position: relative;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
